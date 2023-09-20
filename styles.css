@@ -1,0 +1,46 @@
+body {
+  text-align: center;
+  padding-top: 30px;
+  background-color: black;
+}
+
+.diamond {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: inline-block;
+  margin: 150px;
+}
+
+.diamond h1 {
+  font-size: 15px;
+  margin-top: 50px;
+  margin-left: 35px;
+  color: white;
+}
+
+.diamond > p {
+  font-size: 10px;
+  margin-left: 35px;
+  color: white;
+}
+
+.diamond:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 150px;
+  height: 150px;
+  left: 0;
+  top: -15px;
+  right: 0;
+  bottom: 0;
+  border-width: 15px;
+  border-color: orangered gray skyblue greenyellow;
+  border-style: solid;
+  -webkit-transform: rotate(45deg);
+  -webkit-transition: border-color 0.3s;
+  -moz-transform: rotate(45deg);
+  -moz-transition: border-color 0.3s;
+  transform: rotate(45deg);
+}
